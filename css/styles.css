@@ -1,0 +1,54 @@
+
+.body {
+    font-family: 'Roboto', sans-serif;
+    color: #434455;
+}
+
+.header {
+    background-color: #ffffff;
+    color: #434455;
+    text-align: left;
+}
+.heading {
+    background: #2E2F42;
+    
+    height: 603;
+    left: 0px;
+    top: 72;
+}
+.heading-text {
+   
+}
+
+.botton {
+    
+}
+
+.botton-text {
+ text-align: center;
+}
+
+
+
+
+.skill-list {
+    display: flex;
+}
+
+
+
+.what-are-we {
+    display: flex;
+}
+
+
+
+
+.our {
+    display: flex;
+}
+
+.footer {
+    background: #2E2F42;
+    color: #E7E9FC
+}
