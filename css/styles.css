@@ -1,332 +1,288 @@
-.body {
-    font-family:'Roboto','Raleway', sans-serif;
-}
-
 :root {
-    --first-btn-color: #4D5AE5
-    
+  --standart-white: #ffffff;
+  --logo-title-color: #2e2f42;
+  --header-btn-color: #4d5ae5;
+  --about-galtext: #434455;
+  --first-border-color: #e7e9fc;
+  --second-border-color: #f4f4fd;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+}
 
 /*--------------HEADER---------------*/
 
-    .header {
-    background: #FFFFFF;
-    }
-    
-    .list {
-    list-style: none;
-    }
+.list {
+  list-style: none;
+}
 
-    .link {
-    text-decoration: none;
-    }
+.link {
+  text-decoration: none;
+}
 
-    .header {
-        background: #FFFFFF;
-        box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-         0px 1px 1px rgba(46, 47, 66, 0.16), 
-         0px 1px 6px rgba(46, 47, 66, 0.08);
-    }
+.header {
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  background: var(--standart-white);
+}
 
-   
-    
-
-
-    .logo {
-    color: #2E2F42;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.33;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    cursor: pointer;
-
-    }
-    .logo :hover,
-    .logo :focus {
-    color:var(--first-btn-color);
-    }
+.logo {
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: var(--logo-title-color);
+}
+.logo :hover,
+.logo :focus {
+  color: var(--header-btn-color);
+}
 
 .web {
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.33;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    cursor: pointer;
-    color:var(--first-btn-color)
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: var(--header-btn-color);
 }
 
 .header-link {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #2E2F42;
-    cursor: pointer;
-    }
-    .header-link:focus,
-    .header-link:hover{
-    color:var(--first-btn-color);
-    }
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  color: var(--logo-title-color);
+}
+.header-link:focus,
+.header-link:hover {
+  color: var(--header-btn-color);
+}
 
-    .address-link{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    cursor: pointer;
-    color: #434455
-    }
+.address-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  font-style: normal;
+  cursor: pointer;
+  color: var(--about-galtext);
+}
 
-    .address-link:hover,
-    .address-link:focus {
-    color:var(--first-btn-color);
-    }
-
-
-
-
-
+.address-link:hover,
+.address-link:focus {
+  color: var(--header-btn-color);
+}
 
 /*--------------OUR SKILLS----------------*/
- 
 
 .skills {
-    background: #2E2F42;
+  background: var(--logo-title-color);
 }
 
 .heading-text {
-font-weight: 700;
-font-size: 56px;
-line-height: 1.07;
-text-align: center;
-letter-spacing: 0.02em;
-color:#FFFFFF
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--standart-white);
 }
 
-.botton {
-display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 16px 32px;
-gap: 10px;
-background: #4D5AE5;
-cursor: pointer;
+.button-header {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  align-items: center;
+  letter-spacing: 0.04em;
+  padding: 16px 32px;
+  background: var(--header-btn-color);
+  cursor: pointer;
+  color: var(--standart-white);
 }
-.botton :hover,
-.botton :focus {
-    color: #FFFFFF;
-}
-
-
-.botton-text {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.18;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.04em;
-    color:#FFFFFF
-    
+.button-header:hover,
+.button-header:focus {
+  background-color: #404bbf;
 }
 
-.title-skills {
-    opacity: 0;
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 .about-title {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2E2F42;}
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--logo-title-color);
+}
 
 .about-text {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--about-galtext);
 }
 
-
-.content-title{
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: #2E2F42;
+.content-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--logo-title-color);
 }
 
-.content-list{
-    display: flex;
-    align-items: flex-start;
-    padding: 0px;
+.content-list {
+  padding: 0px;
 }
-
-
 
 /*------------- OUR TEAM----------------*/
 
 .section-team {
-background-color: #F4F4FD;
+  background-color: var(--second-border-color);
 }
 
-.team-title{
- 
-font-weight: 700;
-font-size: 36px;
-line-height: 1.11;
-text-align: center;
-letter-spacing: 0.02em;
-text-transform: capitalize;
-color: #2E2F42;
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--logo-title-color);
 }
-
 
 .team-card {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-padding: 0px 0px 32px;
-gap: 32px;
-background:#FFFFFF
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 0px 32px;
+  gap: 32px;
+  background: var(--standart-white);
 }
 
- .item-name {
-font-weight: 500;
-font-size: 20px;
-line-height: 1.2;
-text-align: center;
-letter-spacing: 0.02em;
-color: #2E2F42;
-flex: none;
-order: 0;
-flex-grow: 0;
- }
+.item-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.02em;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  color: var(--logo-title-color);
+}
 
 .item-info {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: center;
-    letter-spacing: 0.02em;
-    color: #434455;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--about-galtext);
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
 
 /*--------------FOOTER----------------*/
-    .footer {
-     background: #2E2F42;
-    }
-    .logo-footer {
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.16;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #F4F4FD;
-
-    }
-
-    .footer-title {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #E7E9FC;
-
+.footer {
+  background: var(--logo-title-color);
 }
-    
+.logo-footer {
+  font-style: normal;
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.15;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--second-border-color);
+}
 
-
-
+.footer-title {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--first-border-color);
+}
 
 /*--------------PORTFOLIO----------------*/
 
-
-    .filtr-btn {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 24px;
-
-    }
+.filtr-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+}
 
 .button-item {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 12px 24px;
-    background: #F4F4FD;
-    border: 1px solid #E7E9FC;
-    border-radius: 4px;
-    order: 1;
-    flex-grow: 0;
-    cursor: pointer;
-    }
-    .button-item:hover,
-    .button-item:focus {
-        background-color: #4D5AE5;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 12px 24px;
+  background: var(--second-border-color);
+  border: 1px solid var(--first-border-color);
+  border-radius: 4px;
+  cursor: pointer;
+  color: var(--header-btn-color);
+}
+.button-item:hover,
+.button-item:focus {
+  background-color: #4d5ae5;
+  color: var(--standart-white);
+}
 
-    }
+/*--------------Galery---------------*/
 
-    .button-text {
+.galery-list-item {
+  border: 0.5px solid var(--second-border-color);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+  background: var(--standart-white);
+}
 
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.5;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.04em;
-    color: #4D5AE5;
-    }
+.galery-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--logo-title-color);
+}
 
-    .button-text:hover,
-    .button-text:focus {
-     color: #E7E9FC;
-    }
-
-                /*--------------Galery---------------*/
-
-    .galery-list-item{
-    background: #FFFFFF;
-    border: 0.5px solid #F4F4FD;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
-    }
-    
-    .galery-title {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2E2F42;
-    }
-
-    .galery-text {
-     font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.02em;
-    color: #434455;
-    }
+.galery-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--about-galtext);
+}
