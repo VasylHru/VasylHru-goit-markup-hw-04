@@ -11,16 +11,17 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body>
+  <body class="site-body">
     <!--section header-->
-    <header class="header link">
+    <header class="header link ">
+      <div class="container">
       <nav class="header-navigation">
         <a class="logo link" href="./portfolio.html"
-          ><span class="web">WEB</span>STUDIO</a
-        >
-        <ul class="header-item list">
+          ><span class="web">WEB</span>STUDIO</a>
+        <ul class="header-item list flex ">
           <li><a class="header-link link" href="./index.html">Studio</a></li>
           <li>
             <a class="header-link link" href="./portfolio.html">Portfolio</a>
@@ -28,8 +29,9 @@
           <li><a class="header-link link" href="Contacts">Contacts</a></li>
         </ul>
       </nav>
+
       <address>
-        <ul class="list">
+        <ul class="list ">
           <li class="address-item">
             <a class="address-link link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
@@ -42,6 +44,7 @@
           </li>
         </ul>
       </address>
+    </div>
     </header>
 
     <!--Button-->
@@ -107,9 +110,9 @@
 
     <section class="section-team">
       <h2 class="team-title">Our Team</h2>
-
       <ul class="team-list list">
         <li class="team-card">
+          <a class="link" href="">
           <img
             src="./img/boy4.jpg"
             alt="Mark Guerrero"
@@ -118,16 +121,22 @@
           />
           <h3 class="item-name">Mark Guerrero</h3>
           <p class="item-info">Product Designer</p>
+        </a> 
         </li>
-
+          
         <li class="team-card">
-          <img src="./img/boy2.jpg" alt="Tom Ford" width="264" height="260" />
-          <h3 class="item-name">Tom Ford</h3>
-          <p class="item-info">Frontend Developer</p>
+          <a class="link" href=""> <img 
+             src="./img/boy2.jpg" 
+             alt="Tom Ford" 
+             width="264"
+             height="260" />
+            <h3 class="item-name">Tom Ford</h3>
+            <p class="item-info">Frontend Developer</p>
+          </a> 
         </li>
-
+        
         <li class="team-card">
-          <img
+          <a class="link" href=""> <img
             src="./img/boy3.jpg"
             alt="Camila Garcia"
             width="264"
@@ -135,10 +144,11 @@
           />
           <h3 class="item-name">Camila Garcia</h3>
           <p class="item-info">Marketing</p>
+        </a>
         </li>
-
+       
         <li class="team-card">
-          <img
+          <a class="link" href=""><img
             src="./img/boy1.jpg"
             alt="Daniel Wilson"
             width="264"
@@ -146,6 +156,7 @@
           />
           <h3 class="item-name">Daniel Wilson</h3>
           <p class="item-info">UI Designer</p>
+        </a> 
         </li>
       </ul>
     </section>

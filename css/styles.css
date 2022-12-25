@@ -5,7 +5,18 @@
   --about-galtext: #434455;
   --first-border-color: #e7e9fc;
   --second-border-color: #f4f4fd;
+
 }
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
 
 body {
   font-family: "Roboto", sans-serif;
@@ -19,6 +30,9 @@ body {
 
 .link {
   text-decoration: none;
+}
+.flex {
+  display: flex;
 }
 
 .header {
@@ -56,7 +70,18 @@ body {
   color: var(--header-btn-color);
 }
 
+.header-navigation{
+  display: flex;
+}
+
+
+
+
+
 .header-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -68,6 +93,11 @@ body {
 .header-link:hover {
   color: var(--header-btn-color);
 }
+
+
+
+
+
 
 .address-link {
   font-weight: 400;
@@ -87,14 +117,16 @@ body {
 /*--------------OUR SKILLS----------------*/
 
 .skills {
+
   background: var(--logo-title-color);
 }
 
 .heading-text {
-  font-weight: 500;
+
+  text-align: center;
+  font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
   letter-spacing: 0.02em;
   color: var(--standart-white);
 }
@@ -182,8 +214,8 @@ body {
   justify-content: center;
   align-items: center;
   padding: 0px 0px 32px;
-  gap: 32px;
   background: var(--standart-white);
+  
 }
 
 .item-name {
