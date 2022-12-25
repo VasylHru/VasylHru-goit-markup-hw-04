@@ -11,17 +11,17 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body class="site-body">
     <!--section header-->
     <header class="header link ">
-      <div class="container">
+    <div class="container">
       <nav class="header-navigation">
         <a class="logo link" href="./portfolio.html"
           ><span class="web">WEB</span>STUDIO</a>
-        <ul class="header-item list flex ">
+        <ul class="header-item list  ">
           <li><a class="header-link link" href="./index.html">Studio</a></li>
           <li>
             <a class="header-link link" href="./portfolio.html">Portfolio</a>
@@ -29,8 +29,7 @@
           <li><a class="header-link link" href="Contacts">Contacts</a></li>
         </ul>
       </nav>
-
-      <address>
+      <address class="address">
         <ul class="list ">
           <li class="address-item">
             <a class="address-link link" href="mailto:info@devstudio.com"
@@ -46,52 +45,58 @@
       </address>
     </div>
     </header>
-
-    <!--Button-->
     <main>
-      <section class="skills">
-        <h1 class="heading-text">Effective Solutions for Your Business</h1>
-        <button class="button-header" type="button">Order service</button>
-      </section>
     <!--Button-->
+  
+      <section class="skills">
+        <div class="container">        
+          <h1 class="heading-text">Effective Solutions for Your Business</h1>
+          <button class="button-header" type="button">Order service</button>
+        </div>
+      </section>
+
+
 
 
   <!--SKILLS-->
       <section class="about">
-        <h2 class="visually-hidden">Ours skills</h2>
-        <ul class="about-list list">
-          <li class="about-item">
-            <h3 class="about-title">Strategy</h3>
-            <p class="about-text">
-              Our goal is to identify the business problem to walk away with the
-              perfect and creative solution.
-            </p>
-          </li>
-          <li class="about-item">
-            <h3 class="about-title">Punctuality</h3>
-            <p class="about-text">
-              Bring the key message to the brand's audience for the best price
-              within the shortest possible time.
-            </p>
-          </li>
-          <li class="about-item">
-            <h3 class="about-title">Diligence</h3>
-            <p class="about-text">
-              Research and confirm brands that present the strongest digital
-              growth opportunities and minimize risk.
-            </p>
-          </li>
-          <li class="about-item">
-            <h3 class="about-title">Technologies</h3>
-            <p class="about-text">
-              Design practice focused on digital experiences. We bring forth a
-              deep passion for problem-solving.
-            </p>
-          </li>
-        </ul>
+      <div class="container"> 
+          <h2 class="visually-hidden">Ours skills</h2>
+          <ul class="about-list list">
+            <li class="about-item">
+              <h3 class="about-title">Strategy</h3>
+              <p class="about-text">
+                Our goal is to identify the business problem to walk away with the
+                perfect and creative solution.
+              </p>
+            </li>
+            <li class="about-item">
+              <h3 class="about-title">Punctuality</h3>
+              <p class="about-text">
+                Bring the key message to the brand's audience for the best price
+                within the shortest possible time.
+              </p>
+            </li>
+            <li class="about-item">
+              <h3 class="about-title">Diligence</h3>
+              <p class="about-text">
+                Research and confirm brands that present the strongest digital
+                growth opportunities and minimize risk.
+              </p>
+            </li>
+            <li class="about-item">
+              <h3 class="about-title">Technologies</h3>
+              <p class="about-text">
+                Design practice focused on digital experiences. We bring forth a
+                deep passion for problem-solving.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
-
+   
       <section class="content">
+           <div class="container">
         <h2 class="content-title">What are we doing</h2>
         <ul class="content-list list">
           <li class="content-pictures">
@@ -104,11 +109,14 @@
             <img src="./img/adapt.jpg" alt="adapt" width="360" height="300" />
           </li>
         </ul>
+      </div>
       </section>
+  
     </main>
     <!--section 4 Team-->
 
     <section class="section-team">
+      <div class="container" >
       <h2 class="team-title">Our Team</h2>
       <ul class="team-list list">
         <li class="team-card">
@@ -159,10 +167,12 @@
         </a> 
         </li>
       </ul>
+    </div>
     </section>
     <!--section 5 under-->
 
     <footer class="footer">
+      <div class="container">
       <a class="logo-footer link" href="./portfolio.html"
         ><span class="web">WEB</span>STUDIO</a
       >
@@ -170,6 +180,7 @@
         Increase the flow of customers and sales for your business with digital
         marketing & growth solutions.
       </p>
+    </div>
     </footer>
   </body>
 </html>

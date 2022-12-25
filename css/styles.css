@@ -17,6 +17,15 @@
   box-sizing: border-box;
 }
 
+p,h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+}
+
+ul, ol {
+  margin: 0;
+  padding-left: 0;
+}
+
 
 body {
   font-family: "Roboto", sans-serif;
@@ -35,9 +44,29 @@ body {
   display: flex;
 }
 
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+ 
+  margin: 0 auto;
+}
+
+
+.site-body {
+  width: 1440px;
+  height: 2590px;
+  background: var(--standart-white)
+}
+
+
+
 .header {
+  padding-top: 24px;
+  padding-bottom: 24px;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+              0px 1px 1px rgba(46, 47, 66, 0.16),
+              0px 1px 6px rgba(46, 47, 66, 0.08);
   background: var(--standart-white);
 }
 
@@ -70,16 +99,13 @@ body {
   color: var(--header-btn-color);
 }
 
-.header-navigation{
-  display: flex;
-}
-
 
 
 
 
 .header-link {
-  display: flex;
+  
+ 
   align-items: center;
   justify-content: space-between;
   font-weight: 500;
@@ -117,12 +143,19 @@ body {
 /*--------------OUR SKILLS----------------*/
 
 .skills {
-
+ 
+  
   background: var(--logo-title-color);
 }
 
 .heading-text {
-
+  padding-top:188px ;
+  padding-bottom: 292px;
+  padding-left: 473px;
+  padding-right: 473px;
+  margin-bottom: 48px;
+  width: 494px;
+  height: 120px;
   text-align: center;
   font-weight: 700;
   font-size: 56px;
@@ -132,6 +165,7 @@ body {
 }
 
 .button-header {
+  
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -162,6 +196,11 @@ body {
   margin: -1px;
 }
 
+.about {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .about-title {
   font-weight: 700;
   font-size: 20px;
@@ -176,9 +215,16 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--about-galtext);
+
+}
+.content {
+padding-top: 120px;
+padding-bottom: 120px;
+ 
 }
 
 .content-title {
+  margin-bottom: 72px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -195,10 +241,13 @@ body {
 /*------------- OUR TEAM----------------*/
 
 .section-team {
+  padding-top: 120px;
+  padding-bottom: 120px;
   background-color: var(--second-border-color);
 }
 
 .team-title {
+  margin-bottom: 72px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -208,12 +257,13 @@ body {
   color: var(--logo-title-color);
 }
 
+
 .team-card {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0px 0px 32px;
+
   background: var(--standart-white);
   
 }
@@ -257,6 +307,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--second-border-color);
+  margin-bottom: 16px;
 }
 
 .footer-title {
@@ -268,12 +319,16 @@ body {
 
 /*--------------PORTFOLIO----------------*/
 
+
+
 .filtr-btn {
+  padding-top: 96px;
+  margin-bottom: 72px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 0px;
-  gap: 24px;
+  
+
 }
 
 .button-item {
@@ -298,6 +353,7 @@ body {
 /*--------------Galery---------------*/
 
 .galery-list-item {
+  padding-bottom: 120px;
   border: 0.5px solid var(--second-border-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
   background: var(--standart-white);
