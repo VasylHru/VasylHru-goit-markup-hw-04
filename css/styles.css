@@ -29,6 +29,7 @@ ul, ol {
 
 body {
   font-family: "Roboto", sans-serif;
+  
 }
 
 /*--------------HEADER---------------*/
@@ -48,15 +49,13 @@ body {
   width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
- 
   margin: 0 auto;
 }
 
 
 .site-body {
-  width: 1440px;
-  height: 2590px;
   background: var(--standart-white)
+  
 }
 
 
@@ -75,7 +74,7 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
-  display: flex;
+  margin-right: 76px;
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -88,10 +87,11 @@ body {
 }
 
 .web {
+
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
-  display: flex;
+
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -99,15 +99,30 @@ body {
   color: var(--header-btn-color);
 }
 
+.header-contaiter {
+  display: flex;
+}
 
 
+
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.header-item {
+  display: flex;
+  align-items: center;
+  
+}
 
 
 .header-link {
   
- 
+  margin-right: 40px;
   align-items: center;
-  justify-content: space-between;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -121,11 +136,15 @@ body {
 }
 
 
-
+.address-header {
+  align-items: center;
+  display: flex;
+}
 
 
 
 .address-link {
+  margin-left: 40px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -142,44 +161,51 @@ body {
 
 /*--------------OUR SKILLS----------------*/
 
-.skills {
- 
-  
+.hero{
+  padding-top: 188px;
+  padding-bottom: 188px;
+  text-align: center;
   background: var(--logo-title-color);
+  
 }
 
-.heading-text {
-  padding-top:188px ;
-  padding-bottom: 292px;
-  padding-left: 473px;
-  padding-right: 473px;
-  margin-bottom: 48px;
-  width: 494px;
-  height: 120px;
-  text-align: center;
+.hero-text {
+
+  font-family: 'Roboto' ;
+  font-style: normal;
   font-weight: 700;
   font-size: 56px;
-  line-height: 1.07;
+  line-height: 60px;
+  text-align: center;
   letter-spacing: 0.02em;
   color: var(--standart-white);
+  width: 496px;
+  height: 120px;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
-.button-header {
+.hero-button {
   
-  font-family: "Roboto";
+  font-family: "Roboto"'sans-serif';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  align-items: center;
   letter-spacing: 0.04em;
   padding: 16px 32px;
   background: var(--header-btn-color);
   cursor: pointer;
   color: var(--standart-white);
+  margin-top:48px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  min-width: 169px;
+  height: 56px; 
 }
-.button-header:hover,
-.button-header:focus {
+.hero-button:hover,
+.hero-button:focus {
   background-color: #404bbf;
 }
 
@@ -198,7 +224,13 @@ body {
 
 .about {
   padding-top: 120px;
-  padding-bottom: 120px;
+}
+
+
+.about-list {
+
+  display: flex;
+  
 }
 
 .about-title {
@@ -207,9 +239,14 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--logo-title-color);
+  
 }
 
 .about-text {
+  width: 300px;
+  height: 72px;
+  margin-top: 8px;
+  padding-right: 24px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -224,6 +261,7 @@ padding-bottom: 120px;
 }
 
 .content-title {
+  
   margin-bottom: 72px;
   font-weight: 700;
   font-size: 36px;
@@ -235,7 +273,11 @@ padding-bottom: 120px;
 }
 
 .content-list {
-  padding: 0px;
+  padding-right: 158px;
+  padding-left: 158px;
+  gap: 24px;
+  display: flex;
+  justify-content: center
 }
 
 /*------------- OUR TEAM----------------*/
@@ -245,6 +287,14 @@ padding-bottom: 120px;
   padding-bottom: 120px;
   background-color: var(--second-border-color);
 }
+
+.team-list {
+  gap: 24px;
+  justify-content: space-between;
+  display: flex;
+}
+
+
 
 .team-title {
   margin-bottom: 72px;
@@ -259,16 +309,20 @@ padding-bottom: 120px;
 
 
 .team-card {
+  width: 264px;
+  height: 380px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-
   background: var(--standart-white);
   
 }
 
 .item-name {
+  margin-top: 32px;
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -293,24 +347,42 @@ padding-bottom: 120px;
 }
 
 /*--------------FOOTER----------------*/
+
+
+
+
+
 .footer {
+ 
+  height: 310px;
   background: var(--logo-title-color);
 }
+
+.footer-text {
+  padding-top: 100px;
+  height: 110px;
+}
+
+
 .logo-footer {
   font-style: normal;
   font-family: "Raleway";
   font-weight: 800;
   font-size: 18px;
   line-height: 1.15;
-  display: flex;
+  margin-top: 100px;
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--second-border-color);
   margin-bottom: 16px;
+ 
 }
 
 .footer-title {
+  margin-top: 16px;
+  width: 264px;
+  height: 72px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -322,12 +394,13 @@ padding-bottom: 120px;
 
 
 .filtr-btn {
-  padding-top: 96px;
+  margin-top: 96px;
   margin-bottom: 72px;
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  
+  align-items: center;
+  padding-left:270px;
+  padding-right: 270px;
+  justify-content: space-between
 
 }
 
@@ -351,12 +424,21 @@ padding-bottom: 120px;
 }
 
 /*--------------Galery---------------*/
-
-.galery-list-item {
+.galery-list{
   padding-bottom: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between
+  
+}
+.galery-list-item {
+  width: 360px;
+  height: 420px;
   border: 0.5px solid var(--second-border-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
   background: var(--standart-white);
+  margin-bottom: 48px;
+  align-items: center;
 }
 
 .galery-title {
@@ -365,6 +447,8 @@ padding-bottom: 120px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--logo-title-color);
+  margin-top: 32px;
+  margin-bottom: 8px;
 }
 
 .galery-text {
