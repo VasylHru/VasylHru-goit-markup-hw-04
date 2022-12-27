@@ -51,7 +51,8 @@ body {
   width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .site-body {
@@ -59,8 +60,7 @@ body {
 }
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   background: var(--standart-white);
@@ -102,16 +102,32 @@ body {
 .header-navigation {
   display: flex;
   align-items: center;
-  margin-right: auto;
+  
 }
 
 .header-item {
+  margin-left: 0;
   display: flex;
   align-items: center;
 }
 
-.header-link {
+
+.navigation-list {
+  margin-left: 0;
   margin-right: 40px;
+}
+
+
+.address {
+  margin-left: auto;
+  align-items: center;
+
+}
+
+
+.header-link {
+  padding-top: 24px;
+  padding-bottom: 24px;
   align-items: center;
   font-weight: 500;
   font-size: 16px;
@@ -126,12 +142,15 @@ body {
 }
 
 .address-header {
-  align-items: center;
+  gap: 40px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   display: flex;
 }
 
 .address-link {
-  margin-left: 40px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -156,23 +175,21 @@ body {
 }
 
 .hero-text {
-  font-family: "Roboto";
-  font-style: normal;
+  
+  
   font-weight: 700;
   font-size: 56px;
-  line-height: 60px;
+  line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--standart-white);
   width: 496px;
-  height: 120px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .hero-button {
-  font-family: "Roboto" "sans-serif";
-  font-style: normal;
+  font-family:inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -183,9 +200,8 @@ body {
   color: var(--standart-white);
   margin-top: 48px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  min-width: 169px;
-  height: 56px;
+  border: none;
+ 
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -209,9 +225,23 @@ body {
   padding-top: 120px;
 }
 
+.about-item {
+  width: 264px;
+  height: 104px;
+ 
+}
+
+
 .about-list {
   display: flex;
+  gap: 24px;
 }
+
+
+.about-item:last-child {
+ margin: 0;
+}
+
 
 .about-title {
   font-weight: 700;
@@ -222,10 +252,8 @@ body {
 }
 
 .about-text {
-  width: 300px;
-  height: 72px;
+ 
   margin-top: 8px;
-  padding-right: 24px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -249,11 +277,10 @@ body {
 }
 
 .content-list {
-  padding-right: 158px;
-  padding-left: 158px;
+ 
   gap: 24px;
   display: flex;
-  justify-content: center;
+ 
 }
 
 /*------------- OUR TEAM----------------*/
@@ -293,8 +320,15 @@ body {
   background: var(--standart-white);
 }
 
+
+.team-box {
+  padding-bottom: 32px;
+  padding-top: 32px;
+
+}
+
+
 .item-name {
-  margin-top: 32px;
   margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
@@ -314,22 +348,18 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--about-galtext);
-  flex: none;
-  order: 1;
-  flex-grow: 0;
+ 
 }
 
 /*--------------FOOTER----------------*/
 
 .footer {
-  height: 310px;
+padding-top: 100px;
+padding-bottom: 100px;
   background: var(--logo-title-color);
 }
 
-.footer-text {
-  padding-top: 100px;
-  height: 110px;
-}
+
 
 .logo-footer {
   font-style: normal;
@@ -348,7 +378,6 @@ body {
 .footer-title {
   margin-top: 16px;
   width: 264px;
-  height: 72px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -357,14 +386,20 @@ body {
 
 /*--------------PORTFOLIO----------------*/
 
+
+.portfolio {
+padding-top: 96px;
+padding-bottom: 120px;
+}
+
+
 .filtr-btn {
-  margin-top: 96px;
+  gap: 24px;
   margin-bottom: 72px;
   display: flex;
   align-items: center;
-  padding-left: 270px;
-  padding-right: 270px;
-  justify-content: space-between;
+  
+  justify-content: center;
 }
 
 .button-item {
@@ -388,20 +423,28 @@ body {
 
 /*--------------Galery---------------*/
 .galery-list {
-  padding-bottom: 120px;
+  gap: 48px 24px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  
 }
+
+
+
 .galery-list-item {
-  width: 360px;
-  height: 420px;
-  border: 0.5px solid var(--second-border-color);
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
   background: var(--standart-white);
-  margin-bottom: 48px;
-  align-items: center;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+
 }
+
+
+
+.galery-box {
+  padding: 0px 16px;
+  border: 1px solid var(--second-border-color);
+ 
+}
+
 
 .galery-title {
   font-weight: 500;
