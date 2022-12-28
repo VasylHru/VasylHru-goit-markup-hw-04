@@ -110,9 +110,14 @@ body {
 }
 
 .navigation-list {
-  margin-left: 0;
+  margin-left: 0px;  
   margin-right: 40px;
 }
+.navigation-list:last-child {
+  margin-right: auto;
+}
+
+
 
 .address {
   margin-left: auto;
@@ -191,6 +196,7 @@ body {
   cursor: pointer;
   color: var(--standart-white);
   margin-top: 48px;
+  border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
 }
@@ -292,13 +298,10 @@ body {
 }
 
 .team-card {
-  width: 264px;
-  height: 380px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
-  display: flex;
-  flex-direction: column;
+ 
   align-items: center;
   background: var(--standart-white);
 }
@@ -315,9 +318,6 @@ body {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.02em;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
   color: var(--logo-title-color);
 }
 
@@ -409,8 +409,11 @@ body {
 }
 
 .galery-box {
-  padding: 0px 16px;
-  border: 1px solid var(--second-border-color);
+  padding: 32px 16px;
+  border-bottom: 1px solid var(--second-border-color); 
+  border-left:  1px solid var(--second-border-color);
+  border-right: 1px solid var(--second-border-color); 
+  border-top: none;
 }
 
 .galery-title {
@@ -419,7 +422,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--logo-title-color);
-  margin-top: 32px;
+ 
   margin-bottom: 8px;
 }
 
