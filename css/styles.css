@@ -256,23 +256,19 @@ body {
 /*--------------OUR icons----------------*/
 .skills-icons {
   margin-bottom: 8px;
-  
-}
-
-
-.skills-list {
   display: flex;
   gap: 24px;
   justify-content: center;
-  
-}
-
-
-.skills-item{
   width: 264px;
   height: 112px;
   background: #F4F4FD;
- }
+}
+
+
+
+
+
+
 
 .skills-link {
  width: 100%;
@@ -408,8 +404,6 @@ body {
 display: flex;
 justify-content: center;
 gap: 24px;
-padding-left:16px;
-padding-right: 16px;
 }
 
 .team-soc-item {
@@ -440,8 +434,12 @@ padding-right: 16px;
 
 /*--------------Costumers-icons----------------*/
 
+.client-section { 
+   padding-top: 130px;
+   padding-bottom: 120px;
+}
+
 .client-title {
-  padding-top: 130px;
   margin-bottom: 72px;
   font-weight: 700;
   font-size: 36px;
@@ -453,17 +451,12 @@ padding-right: 16px;
 }
 
 .client-list {
-  justify-content: center;
   display: flex;
   gap: 24px;
-  padding-left: 156px;
-  padding-right: 156px;
-  padding-bottom: 120px;
- 
 }
 
 .client-items {
-  width: 168px;
+  width:calc((100%-168px)/6);
   height: 88px;
   
 }
@@ -481,8 +474,7 @@ padding-right: 16px;
 
 
 .client-icon {
-  width: 104px;
-  height: 56px;
+  fill: #AFB1B8;
   }
 
   .client-link:hover,
@@ -537,9 +529,7 @@ padding-right: 16px;
   color: var(--first-border-color);
 }
 
-.footer-text {
-  padding-left: 156px;
-}
+
 
 
 /*--------------Footer-Icons----------------*/
@@ -611,11 +601,6 @@ margin-bottom: 16px;
 }
 
 
-.filtr-btn-items:hover {
-  background: #404BBF;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-}
 
 .button-item {
   font-family: "Roboto";
@@ -629,11 +614,14 @@ margin-bottom: 16px;
   border-radius: 4px;
   cursor: pointer;
   color: var(--header-btn-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .button-item:hover,
 .button-item:focus {
   background-color: #4d5ae5;
   color: var(--standart-white);
+  border-radius: 4px;
+  border-color:#4d5ae5 ;
  
 }
 
@@ -644,16 +632,22 @@ margin-bottom: 16px;
   flex-wrap: wrap;
 }
 
+.galery-img {
+  display: block;
+}
+
+.galery-img:hover,
+.galery-img:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .galery-list-item {
   background: var(--standart-white);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 
-.galery-list-item:hover {
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
-}
 
 
 
